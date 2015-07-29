@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="dibiao1" tilewidth="32" tileheight="32">
+  <image source="dibiao1.png" width="256" height="128"/>
+ </tileset>
+ <tileset firstgid="33" name="dibiaoshang" tilewidth="32" tileheight="32">
+  <image source="dibiaoshang.png" width="256" height="65"/>
+ </tileset>
+ <layer name="块层 1" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzEkSgkAQRNHGEUQEkUGU6f6n9F+gOip6a2bE2/xFhqBpmqZpmqb90w444oQzLrhGem70LOHL028ocUeFB+pIb4xeJHx5eosXOvQYMEb62+jPhC9P/+CLGQtWbJG+G31K+PL0HxSXCkk=
+  </data>
+ </layer>
+ <objectgroup name="block">
+  <object x="-5" y="541" width="1288" height="102"/>
+ </objectgroup>
+</map>

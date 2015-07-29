@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="72" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="downmid" tilewidth="32" tileheight="32">
+  <image source="downmid.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="17" name="upleft" tilewidth="32" tileheight="32">
+  <image source="upleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="37" name="upmid" tilewidth="32" tileheight="32">
+  <image source="upmid.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="61" name="upright" tilewidth="32" tileheight="32">
+  <image source="upright.png" width="128" height="128"/>
+ </tileset>
+ <layer name="块层 1" width="72" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztx7cNwEAQBLGX96b/arX5dSCQwATTGgAAAAB/1qU+DWn05ac0pyWtvvyW9nSk05e/0p2e9PryH1ThCZE=
+  </data>
+ </layer>
+ <layer name="块层 2" width="72" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1LkNgDAABEG3wP+Defqvka3AIsIOdqTNL7oQJEmSvquopoZa6vLOKU5PA4000Zx3TnEWWmmjnY68c4oT6aSLbnqyrtEf/NQ0PzXNT02LwU+VpBK86hEEJQ==
+  </data>
+ </layer>
+ <layer name="块层 3" width="72" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1NcNgEAQA1GaIecc+6+L6QEteyf5SfPjApwkIiIiIt+klFFOBZVUOe6hqamhljrqaXDcQzPSRDMttNLmuIdmp4NOuuimx3EXe7F/nrXYP89a7J9nTZ8nIvK/F88JJGE=
+  </data>
+ </layer>
+ <layer name="块层 4" width="72" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1MsNgCAUBVEaU/CD2n9FTAXEDXmEzElmf1c3JUmSpLVstFOmEjtlSgeddNEdvGVGlR566QveIv3h5/X5eX1+niRptAYpqgY9
+  </data>
+ </layer>
+ <objectgroup name="block" width="72" height="20">
+  <object x="-6" y="562" width="2314" height="82"/>
+  <object x="171" y="400" width="599" height="56"/>
+  <object x="779" y="244" width="1368" height="60"/>
+ </objectgroup>
+ <objectgroup name="gold" width="72" height="20">
+  <object x="672" y="352"/>
+  <object x="608" y="351"/>
+  <object x="864" y="511"/>
+  <object x="928" y="511"/>
+  <object x="992" y="511"/>
+  <object x="1056" y="512">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="1119" y="512"/>
+  <object x="1184" y="513"/>
+  <object x="1247" y="512"/>
+  <object x="1311" y="513">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="1376" y="513"/>
+  <object x="1440" y="511"/>
+  <object x="1505" y="512"/>
+  <object x="896" y="191"/>
+  <object x="960" y="192"/>
+  <object x="1056" y="96"/>
+  <object x="1120" y="95"/>
+  <object x="1217" y="192"/>
+  <object x="1279" y="192"/>
+  <object x="1344" y="192"/>
+  <object x="1438" y="96"/>
+  <object x="1502" y="96"/>
+  <object x="1601" y="191"/>
+  <object x="1664" y="191"/>
+  <object x="1728" y="192"/>
+ </objectgroup>
+</map>

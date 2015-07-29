@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="56" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="downleft" tilewidth="32" tileheight="32">
+  <image source="downleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="21" name="downmid" tilewidth="32" tileheight="32">
+  <image source="downmid.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="37" name="downright" tilewidth="32" tileheight="32">
+  <image source="downright.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="53" name="upleft" tilewidth="32" tileheight="32">
+  <image source="upleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="73" name="upmid" tilewidth="32" tileheight="32">
+  <image source="upmid.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="97" name="upright" tilewidth="32" tileheight="32">
+  <image source="upright.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="113" name="fansval" tilewidth="49" tileheight="51">
+  <image source="fansval.png" width="49" height="51"/>
+ </tileset>
+ <tileset firstgid="114" name="fansval2" tilewidth="49" tileheight="51">
+  <image source="fansval2.png" width="49" height="51"/>
+ </tileset>
+ <layer name="块层 1" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzbkNwEAMA8Frxv/vc/+1mbEiHQFH3gE2lFgKAAAAAOAPOtWrQY0f3Tgbrrg1qVktak3+aL1xNlxxa1O7OtSZ/NF642y44talblXVk/zReuNsuOLWCyNdCyE=
+  </data>
+ </layer>
+ <layer name="块层 2" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztyzkOgDAQBEFz3xgb/v9WJiUgWGm1UZfU2UxKAAAAAAB8NaoN2HeqV4Ph62FUU8B+VotaDV8Pm9oD9oc6VTZ8PVyqBOyrutVj+P55AbGXAWM=
+  </data>
+ </layer>
+ <layer name="块层 3" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztx7kNwDAMwEAvkd95nf1nNOtU6gIBPIAFS5EkSZIk6X8DjTTRHPhsFlppoxr4bHY66KQr8Nnc9FCjN/BfHSLpBVk=
+  </data>
+ </layer>
+ <objectgroup name="block">
+  <object x="-1" y="563" width="115" height="73"/>
+  <object x="372" y="563" width="146" height="81"/>
+  <object x="758" y="563" width="141" height="85"/>
+  <object x="1145" y="563" width="630" height="80"/>
+ </objectgroup>
+ <objectgroup name="gold">
+  <object gid="113" x="8" y="537"/>
+  <object gid="113" x="72" y="536"/>
+  <object gid="113" x="392" y="536"/>
+  <object gid="113" x="456" y="540"/>
+  <object gid="114" x="200" y="440">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="263" y="440">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="583" y="440">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="648" y="440">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="113" x="776" y="536"/>
+  <object gid="113" x="841" y="536"/>
+  <object gid="114" x="968" y="441">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="1033" y="440">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="113" x="1192" y="538"/>
+  <object gid="113" x="1256" y="537"/>
+  <object gid="114" x="1320" y="537">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="1384" y="537">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="1449" y="537">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="1513" y="537">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="114" x="1576" y="537">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object gid="113" x="1297" y="488"/>
+  <object gid="113" x="1359" y="490"/>
+  <object gid="113" x="1421" y="490"/>
+  <object gid="113" x="1486" y="490"/>
+  <object gid="113" x="1551" y="490"/>
+  <object gid="113" x="1229" y="488"/>
+  <object gid="113" x="1269" y="440"/>
+  <object gid="113" x="1329" y="440"/>
+  <object gid="113" x="1387" y="440"/>
+  <object gid="113" x="1449" y="440"/>
+  <object gid="113" x="1511" y="440"/>
+ </objectgroup>
+</map>

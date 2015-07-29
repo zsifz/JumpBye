@@ -1,0 +1,95 @@
+<Solution>
+  <PropertyGroup Name="CocosProject" Version="2.2.9.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="MainLayer.csd" Type="Layer" />
+        <Folder Name="res">
+          <Folder Name="csb">
+            <Folder Name="ui">
+              <Folder Name="main">
+                <Image Name="bg.png" />
+                <Image Name="red1.png" />
+                <Image Name="red2.png" />
+                <Image Name="yellow1.png" />
+                <Image Name="yellow2.png" />
+                <Image Name="role.png" />
+                <Image Name="money.png" />
+                <Image Name="add.png" />
+                <Image Name="add2.png" />
+                <Image Name="frame.png" />
+                <Image Name="wordbg.png" />
+                <Image Name="next.png" />
+                <Image Name="next2.png" />
+                <Image Name="button_add.png" />
+                <Image Name="button_add2.png" />
+                <Image Name="button_next.png" />
+                <Image Name="button_next2.png" />
+                <Image Name="button_yellow1.png" />
+                <Image Name="button_yellow2.png" />
+                <Image Name="button_red1.png" />
+                <Image Name="button_red2.png" />
+              </Folder>
+              <Folder Name="equipment">
+                <Image Name="small_frame.png" />
+                <Image Name="arrow1.png" />
+                <Image Name="arrow2.png" />
+                <Image Name="name_under.png" />
+                <Image Name="word1.png" />
+                <Image Name="people.png" />
+                <Image Name="point1.png" />
+                <Image Name="point2.png" />
+                <Image Name="bg1.png" />
+                <Image Name="bg2.png" />
+                <Image Name="back.png" />
+                <Image Name="star.png" />
+                <Image Name="name_under2.png" />
+                <Image Name="back2.png" />
+                <Image Name="button_2.png" />
+                <Image Name="button_1.png" />
+                <Image Name="button_arrow1.png" />
+                <Image Name="button_arrow2.png" />
+                <Image Name="button_back.png" />
+                <Image Name="button_back2.png" />
+                <Image Name="leverup1.png" />
+                <Image Name="leverup2.png" />
+              </Folder>
+              <Folder Name="popup">
+                <Image Name="bgg.png" />
+                <Image Name="tip1.png" />
+                <Image Name="tip2.png" />
+                <Image Name="close1.png" />
+                <Image Name="close2.png" />
+                <Image Name="tip22.png" />
+                <Image Name="tip11.png" />
+              </Folder>
+              <Folder Name="win_lose_pause">
+                <Image Name="pause_word.png" />
+                <Image Name="pause_bg.png" />
+                <Image Name="close.png" />
+                <Image Name="close2.png" />
+                <Image Name="continue.png" />
+                <Image Name="continue2.png" />
+                <Image Name="quit.png" />
+                <Image Name="quit2.png" />
+                <Image Name="bg1.png" />
+                <Image Name="wintitle.png" />
+                <Image Name="turnlight.png" />
+                <Image Name="yellowlight.png" />
+                <Image Name="line.png" />
+                <Image Name="loseword.png" />
+                <Image Name="bg2.png" />
+                <Image Name="losetitle1.png" />
+                <Image Name="viewteam.png" />
+                <Image Name="viewteam2.png" />
+                <Image Name="bluelight.png" />
+                <Image Name="winword2.png" />
+              </Folder>
+            </Folder>
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

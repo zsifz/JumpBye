@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="56" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="downleft" tilewidth="32" tileheight="32">
+  <image source="downleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="21" name="downmid" tilewidth="32" tileheight="32">
+  <image source="downmid.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="37" name="downright" tilewidth="32" tileheight="32">
+  <image source="downright.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="53" name="upleft" tilewidth="32" tileheight="32">
+  <image source="upleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="73" name="upmid" tilewidth="32" tileheight="32">
+  <image source="upmid.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="97" name="upright" tilewidth="32" tileheight="32">
+  <image source="upright.png" width="128" height="128"/>
+ </tileset>
+ <layer name="块层 1" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzrcNwEAMwMB3ztn7z2oOIUCFeQB7liJJkiRJ+puKamqopS53J1xPA4000Zy7E26hlTba6cjdCXfSRTc99ObuhPgAXocA0w==
+  </data>
+ </layer>
+ <layer name="块层 2" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztx7kRgEAMwEA3wc/xXv81og4InDjQzihQhCRJkiRJEQONNNFc8LMWWmmjveBnNTropKvgZ9300Eu94P/5AKOkEdE=
+  </data>
+ </layer>
+ <layer name="块层 3" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNwDAQxEA1419+5f5rEwtwejgHHIDRJluKJEmSJEn/N9BIE83JXyIstNJGNflLhJ0OOulK/hLhpocavR97B7otAsk=
+  </data>
+ </layer>
+ <layer name="块层 4" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1McJwEAUA9Ftyjln91+RpwIfPixoQQ/mqqNSMjMz+1dRTQ211IluRvU00EgTzaKbUQuttNFOh+hm1EkX3fTQK7ppZVH6qByUPioHpY/KwR9lVqYPMskOpw==
+  </data>
+ </layer>
+ <layer name="块层 5" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1LcNAEEMA8Fr7723/Rfy24KAI14BB9hEAUOVYmZmFtdQSx31NNAo2ozea5hopoVW2mgXbUbvNRx00kU3PfSKNqN3s6yUPycD5c/JwD/HzP72AU3ZHKg=
+  </data>
+ </layer>
+ <layer name="块层 6" width="56" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1EsKgDAMBuFeVeur6v3XzhUKqUSZD2Yb/lVKkSQpzkQzVVp+uGGljXY6gm9n2NDopIvu4Ntf2iD1yPD3Rsrw90by50h6ywNFbw5r
+  </data>
+ </layer>
+ <objectgroup name="block" width="56" height="20">
+  <object x="120" y="562" width="1525" height="83"/>
+  <object x="133" y="240" width="411" height="56"/>
+  <object x="812" y="244" width="787" height="55"/>
+  <object x="1357" y="407" width="405" height="47"/>
+ </objectgroup>
+ <objectgroup name="gold" width="56" height="20">
+  <object x="289" y="192"/>
+  <object x="352" y="192"/>
+  <object x="160" y="96">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="927" y="192"/>
+  <object x="992" y="192"/>
+  <object x="1152" y="95"/>
+  <object x="1216" y="95"/>
+  <object x="1376" y="192"/>
+  <object x="1440" y="191"/>
+  <object x="1503" y="191"/>
+  <object x="1439" y="351">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="1664" y="352">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="1183" y="512"/>
+  <object x="896" y="512"/>
+  <object x="831" y="513"/>
+  <object x="768" y="512"/>
+  <object x="576" y="96">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
