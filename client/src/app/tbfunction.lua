@@ -3,7 +3,6 @@
 -- des      :资源管理相关接口
 -- author   :czt
 -- data     :2015年1月8日14:37:15
-
 --获取自动释放等级
 function getAutoFreeLevel(key)
 	if not g_get_autofreeinfo or not g_get_autofreeinfo() then
@@ -16,6 +15,14 @@ function getAutoFreeLevel(key)
 		end
 	end
 	return 300
+end
+-- 平台判断
+function is_win32()
+	if device.platform == "windows" then
+		return true;
+	else
+		return false;
+	end
 end
 --添加资源进入自动释放
 function addToAutoFree(key,assetName,at)
@@ -114,7 +121,7 @@ function sg_loadResources(key)
         cc.SpriteFrameCache:getInstance():addSpriteFrames(newfile);--添加plist
 	end
 	setPicFormat();
-	addToAutoFree(key,newfile,restype)
+	--addToAutoFree(key,newfile,restype)
 	return image, restype;
 end
 
@@ -574,4 +581,21 @@ function sg_get_child_by_name_addToNode (obj,name,Addobj)
     local Node_killmonster = sg_get_child_by_name(obj,name);
     Addobj:addTo(Node_killmonster);
     return Addobj;
+end
+--[[
+des     : 创建一个sprite
+input   : key
+return  : Sprite
+autor   : czt
+date    : 2015年3月6日   
+--]]
+function CreateSprite(key)
+    local conf = sg_getresinfo(key);
+    if not conf then
+        return;
+    end
+
+    --local source, restype = sg_loadResources(key);
+    local Sp = display.newSprite(conf[1]);
+    return Sp;
 end

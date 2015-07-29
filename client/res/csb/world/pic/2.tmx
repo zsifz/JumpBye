@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="10" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="dibiao1" tilewidth="64" tileheight="64">
+  <image source="dibiao1.png" width="256" height="128"/>
+ </tileset>
+ <tileset firstgid="9" name="dibiaoshang" tilewidth="64" tileheight="64">
+  <image source="dibiaoshang.png" width="256" height="65"/>
+ </tileset>
+ <layer name="dibiao1" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DgABMQM+OhWZDUMhKhng2I2fHQHEjmsRKhHgAryACj
+  </data>
+ </layer>
+ <layer name="dibiaoshang" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAScQMwFxNxAzDNE3DKY3DzQAACn8AB/
+  </data>
+ </layer>
+ <objectgroup name="block" width="20" height="10">
+  <object x="512" y="272" width="255" height="46"/>
+  <object x="193" y="400" width="254" height="47"/>
+  <object x="832" y="399" width="256" height="49"/>
+  <object x="704" y="540" width="575" height="100"/>
+  <object x="-2" y="541" width="578" height="99"/>
+ </objectgroup>
+ <objectgroup name="gold" width="20" height="10">
+  <object x="576" y="256"/>
+  <object x="639" y="255"/>
+  <object x="705" y="256"/>
+  <object x="896" y="383"/>
+  <object x="960" y="384"/>
+  <object x="256" y="383"/>
+  <object x="319" y="383"/>
+  <object x="64" y="513"/>
+  <object x="127" y="513"/>
+  <object x="192" y="512"/>
+  <object x="768" y="513"/>
+  <object x="833" y="513"/>
+  <object x="897" y="512"/>
+ </objectgroup>
+ <objectgroup name="gold1" width="20" height="10">
+  <object x="383" y="383"/>
+  <object x="1024" y="383"/>
+  <object x="255" y="512"/>
+  <object x="320" y="512"/>
+  <object x="960" y="512"/>
+  <object x="1024" y="513"/>
+  <object x="1088" y="512"/>
+  <object x="1152" y="512"/>
+  <object x="383" y="512"/>
+  <object x="449" y="511"/>
+ </objectgroup>
+</map>

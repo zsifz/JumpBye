@@ -1,7 +1,5 @@
 local ResPathTable=
 {
-	["res#json#other#shouji_eff#shouji_eff"]={"res/json/other/shouji_eff/shouji_eff.ExportJson",0,""},
-	["fireball"]={"res/normal/skill/fireball.png",0,"rgba8888"},
 	["backgreenfloor"]={"res/normal/world/backgreenfloor.png",0,"rgba8888"},
 	["backlv"]={"res/normal/world/backlv.png",0,"rgba8888"},
 	["blank01"]={"res/normal/world/blank01.png",0,"rgb888"},
@@ -19,6 +17,10 @@ local ResPathTable=
 	["wuqi"]={"res/normal/world/wuqi.png",0,"rgba8888"},
 	["yifuIcon"]={"res/normal/world/yifuIcon.png",0,"rgba8888"},
 	["youjianjia"]={"res/normal/world/youjianjia.png",0,"rgba8888"},
+	["res#json#other#shouji_eff#shouji_eff"]={"res/json/other/shouji_eff/shouji_eff.ExportJson",0,""},
+	["fireball"]={"res/normal/skill/fireball.png",0,"rgba8888"},
+	["eff_faz_flash"]={"res/normal/skill/eff_faz_pls/eff_faz_flash.png",0,"rgba8888"},
+	["eff_faz_pls"]={"res/normal/skill/eff_faz_pls/eff_faz_pls.plist",1,""},
 	["res#json#role#shouren_61#shouren_61"]={"res/json/role/shouren_61/shouren_61.ExportJson",0,""},
 	["DamageHp"]={"res/fonts/DamageHp.png",0,"rgba8888"},
 	["Moneynuber"]={"res/fonts/Moneynuber.png",0,"rgba8888"},
@@ -101,8 +103,15 @@ local ResPathTable=
 	["res#normal#ui#buttons#titleradio_bg"]={"res/normal/ui/buttons/titleradio_bg.png",0,"rgba8888"},
 	["res#normal#ui#buttons#titleradio_sel"]={"res/normal/ui/buttons/titleradio_sel.png",0,"rgba8888"},
 	["res#json#skill#casting#eff_faz"]={"res/json/skill/casting/eff_faz.ExportJson",0,""},
-	["eff_faz_flash"]={"res/normal/skill/eff_faz_pls/eff_faz_flash.png",0,"rgba8888"},
-	["eff_faz_pls"]={"res/normal/skill/eff_faz_pls/eff_faz_pls.plist",1,""},
+	["map"]={"res/csb/world/map.csb",0,""},
+	["map_1"]={"res/csb/world/map_1.csb",0,""},
+	["map_1000"]={"res/csb/world/map_1000.csb",0,""},
+	["map_2"]={"res/csb/world/map_2.csb",0,""},
+	["map_3"]={"res/csb/world/map_3.csb",0,""},
+	["map_4"]={"res/csb/world/map_4.csb",0,""},
+	["map_5"]={"res/csb/world/map_5.csb",0,""},
+	["map_jjg"]={"res/csb/world/map_jjg.csb",0,""},
+	["map_pingdi"]={"res/csb/world/map_pingdi.csb",0,""},
 
 };
 return ResPathTable;
