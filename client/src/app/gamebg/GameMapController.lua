@@ -14,20 +14,25 @@ function GameMapController:ctor(gamelayer,gamescene)
     self.gamescene = gamescene
     self.maptable_csb = {}
     self.gamemapobj = {}
+    self.mapcache = {}--test 缓存表
     self.mapIdex = 1--拥有多少张地图
+    self.cacheIdex = 1
     self:init()
 
 end
 
 function GameMapController:init()
-   -- for i=1,3 do
-   --     local tr ="map_"..i
-   --     self.mapIdex = i
-   --     self.maptable_csb[i] = sg_load_csb(tr,2)
-   --     self:loadMapCsb( self.maptable_csb[i])
-   -- end
+   for i=1,10 do
+       local tr ="map_"..i
+       local csb= sg_load_csb(tr,2)
+       csb:retain()
+       if csb~=nil then
+            self.mapcache[i] = csb
+            -- table.insert( self.mapcache,csb)
+       end
+   end
    local tr = "map_"..self.mapIdex
-    self.maptable_csb[self.mapIdex] = sg_load_csb(tr,2)
+    self.maptable_csb[self.mapIdex] = self.mapcache[ self.mapIdex]
     self:loadMapCsb( self.maptable_csb[self.mapIdex])
 end
 function GameMapController:loadMapCsb( mapcsbtb )
@@ -55,6 +60,7 @@ function GameMapController:getMapSize( mapthis )
 end
 function GameMapController:getIntChildNum(tprent,args)
     if tprent==nil then
+        print("getIntChildNum tprent is nil")
         return 
     end
     local num=0
@@ -73,8 +79,12 @@ function GameMapController:Add_csb()
         print("mapIdex过多")
     end
     self.mapIdex =self.mapIdex +1
-    local tr ="map_"..self.mapIdex
-    local csb = sg_load_csb(tr,2)
+    self.cacheIdex = self.cacheIdex + 1
+    -- local tr ="map_"..self.mapIdex
+    if self.cacheIdex==11 then
+        self.cacheIdex =1
+    end
+    local csb = self.mapcache[ self.cacheIdex]--sg_load_csb(tr,2)
     if csb==nil then
         print("没有这个地图")
         return

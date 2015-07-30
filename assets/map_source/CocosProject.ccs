@@ -28,7 +28,6 @@
           </Folder>
         </Folder>
         <Project Name="map_1.csd" Type="Layer" />
-        <Project Name="map_4.csd" Type="Layer" />
         <Project Name="Layer.csd" Type="Layer" />
         <Project Name="map_3.csd" Type="Layer" />
       </RootFolder>
