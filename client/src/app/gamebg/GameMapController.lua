@@ -4,10 +4,10 @@
 local GameBgLayerBase = import(".GameBgLayerBase")
 local GameMap = import(".GameMap")
 local GameMapController = class("GameMapController",GameBgLayerBase)
-local Move_sd = 1000
+local Move_sd = GAMESPEED
 local map={}
-map.width =1920
-map.height =640
+map.width =MAPWIDTH
+map.height =MAPHEIGHT
 function GameMapController:ctor(gamelayer,gamescene)
     GameMapController.super.ctor(self)
     self.gamelayer = gamelayer--:get_layer()
@@ -37,7 +37,6 @@ function GameMapController:loadMapCsb( mapcsbtb )
         local st = "map_"..i
         local map_tmx = sg_get_child_by_name( mapcsbtb,st)
         table.insert( maptable_tmx, map_tmx )
-        print("num",num)
     end
     local gamemap = GameMap:create( self.gamescene,maptable_tmx)--获取tmx内容
     table.insert( self.gamemapobj, gamemap )

@@ -10,25 +10,20 @@ function GameMap:ctor( gamescene,maptb)
 	self:loadMap( )
 end
 function GameMap:loadMap(  )
-	print(type(self.maptable_tmx[1]))
 	for i,v in pairs(self.maptable_tmx) do
 		local objgroup = v:getObjectGroup( TMX_OBJNAME)
 		if objgroup~=nil then
 			local obj = objgroup:getObjects()
 			for k,v in pairs(obj) do
-				print("当前是地图",i)
+				-- print("当前是地图",i)
 				self:createGameObj( v,i)
 			end
 		end
-		-- if v~=nil then
-		-- 	print("tmx1",i,json.encode(v:getMapSize()),json.encode(v:getTileSize()))
-		-- end
 	end
 end
 function GameMap:createGameObj( objv,obji )
 	local rope = Rope:create()
-	rope:setPosition( cc.p(objv.x+obji*1920,objv.y))
-	print("位置x=,y=",objv.x+obji*1920,objv.y)
+	rope:setPosition( cc.p(objv.x+obji*MAPWIDTH,objv.y))
 	self.gamescene:get_gameobjmanager():addObj( rope)
 	table.insert( self.objtable, rope )
 end

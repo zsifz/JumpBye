@@ -1,7 +1,7 @@
 --绳子
 local GameObj = import(".GameObj")
 local Rope = class("Rope",GameObj)
-local speed = 1000
+local speed = GAMESPEED
 function Rope:ctor( )
 	Rope.super.ctor(self)
 end
