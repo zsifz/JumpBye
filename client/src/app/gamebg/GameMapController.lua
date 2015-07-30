@@ -12,11 +12,11 @@ function GameMapController:ctor(gamelayer,gamescene)
     GameMapController.super.ctor(self)
     self.gamelayer = gamelayer--:get_layer()
     self.gamescene = gamescene
-    self.maptable_csb = {}
-    self.gamemapobj = {}
-    self.mapcache = {}--test 缓存表
-    self.mapIdex = 1--拥有多少张地图
-    self.cacheIdex = 1
+    self.csb_TB = {} --csb的table
+    self.mapobj_TB = {}--GameMap对象的表
+    self.csbcache_TB = {}--csb 缓存表
+    self.csb_Idex = 1--拥有多少张地图for csb_TB
+    self.csbcache_Idex = 1 --for csbcache_TB
     self:init()
 
 end
@@ -27,13 +27,13 @@ function GameMapController:init()
        local csb= sg_load_csb(tr,2)
        csb:retain()
        if csb~=nil then
-            self.mapcache[i] = csb
-            -- table.insert( self.mapcache,csb)
+            self.csbcache_TB[i] = csb
+            -- table.insert( self.csbcache_TB,csb)
        end
    end
-   local tr = "map_"..self.mapIdex
-    self.maptable_csb[self.mapIdex] = self.mapcache[ self.mapIdex]
-    self:loadMapCsb( self.maptable_csb[self.mapIdex])
+   local tr = "map_"..self.csb_Idex
+    self.csb_TB[self.csb_Idex] = self.csbcache_TB[ self.csb_Idex]
+    self:loadMapCsb( self.csb_TB[self.csb_Idex])
 end
 function GameMapController:loadMapCsb( mapcsbtb )
     local maptable_tmx = {}
@@ -44,11 +44,11 @@ function GameMapController:loadMapCsb( mapcsbtb )
         table.insert( maptable_tmx, map_tmx )
     end
     local gamemap = GameMap:create( self.gamescene,maptable_tmx)--获取tmx内容
-    table.insert( self.gamemapobj, gamemap )
-    if self.mapIdex==1 then
+    table.insert( self.mapobj_TB, gamemap )
+    if self.csb_Idex==1 then
         mapcsbtb:setPosition( 0,0)
     else
-        local csb = self.maptable_csb[self.mapIdex-1]
+        local csb = self.csb_TB[self.csb_Idex-1]
         mapcsbtb:setPosition(csb:getPositionX()+self:getMapSize(csb),0)
     end
     self.gamelayer:addChild(mapcsbtb,1)
@@ -60,7 +60,7 @@ function GameMapController:getMapSize( mapthis )
 end
 function GameMapController:getIntChildNum(tprent,args)
     if tprent==nil then
-        print("getIntChildNum tprent is nil")
+        print("getIntChildNum(): tprent is nil")
         return 
     end
     local num=0
@@ -75,22 +75,22 @@ function GameMapController:getIntChildNum(tprent,args)
 end
 function GameMapController:Add_csb()
     --test
-    if self.mapIdex==4 then
-        print("mapIdex过多")
+    if self.csb_Idex==4 then
+        print("Add_csb():csb_Idex to high")
     end
-    self.mapIdex =self.mapIdex +1
-    self.cacheIdex = self.cacheIdex + 1
-    -- local tr ="map_"..self.mapIdex
-    if self.cacheIdex==11 then
-        self.cacheIdex =1
+    self.csb_Idex =self.csb_Idex +1
+    self.csbcache_Idex = self.csbcache_Idex + 1
+    -- local tr ="map_"..self.csb_Idex
+    if self.csbcache_Idex==11 then
+        self.csbcache_Idex =1
     end
-    local csb = self.mapcache[ self.cacheIdex]--sg_load_csb(tr,2)
+    local csb = self.csbcache_TB[ self.csbcache_Idex]--sg_load_csb(tr,2)
     if csb==nil then
-        print("没有这个地图")
+        print("Add_csb():not have this csb")
         return
     end
-    self.maptable_csb[self.mapIdex] = csb
-    self:loadMapCsb( self.maptable_csb[self.mapIdex])
+    self.csb_TB[self.csb_Idex] = csb
+    self:loadMapCsb( self.csb_TB[self.csb_Idex])
 
 end
 function GameMapController:Move_csb( mapcsb,dt )
@@ -98,7 +98,7 @@ function GameMapController:Move_csb( mapcsb,dt )
     map_tx = map_tx - dt*Move_sd
     mapcsb:setPosition(cc.p(map_tx,0))
 end
-function GameMapController:Remove_csb( mapcsb )
+function GameMapController:update_csb( mapcsb )
     for k,v in pairs(mapcsb) do
         local mapX,mapY=v:getPosition()
         
@@ -109,14 +109,14 @@ function GameMapController:Remove_csb( mapcsb )
             print("csb安全移除")
             v:removeFromParent()
             table.remove(mapcsb,k)
-            -- table.remove(self.gamemapobj,k)
-            self.mapIdex =self.mapIdex -1
+            -- table.remove(self.mapobj_TB,k)
+            self.csb_Idex =self.csb_Idex -1
         end
 
         --新增地图
         local tt =#mapcsb
         if tt<3 then
-            if mapcsb[self.mapIdex]:getPositionX()<-(contentsize/2) then
+            if mapcsb[self.csb_Idex]:getPositionX()<-(contentsize/2) then
                 print("新增地图")
                 self:Add_csb()
             end
@@ -126,16 +126,16 @@ end
 
 function GameMapController:update(dt)
     --地图的移动
-    for k,v in pairs(self.maptable_csb) do
+    for k,v in pairs(self.csb_TB) do
         if v~=nil then
             self:Move_csb(v,dt)
         end
     end
-    if #self.maptable_csb~=0 then
-        self:Remove_csb( self.maptable_csb )
+    if #self.csb_TB~=0 then
+        self:update_csb( self.csb_TB )
     end
     --GameMap update
-    for k,v in pairs(self.gamemapobj) do
+    for k,v in pairs(self.mapobj_TB) do
         v:update(dt)
     end
 end
