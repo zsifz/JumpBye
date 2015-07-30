@@ -7,5 +7,17 @@
         <LastRunType Value="Unknown" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="Layer.csd" />
+          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="map_2.csd" />
+          <FilePathData Path="map_3.csd" />
+          <FilePathData Path="map_10.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="map_10.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

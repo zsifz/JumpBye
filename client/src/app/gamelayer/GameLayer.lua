@@ -4,6 +4,7 @@ function GameLayer:ctor()
 	self.layer = cc.Layer:create()
 	self:addChild(self.layer)
 end
+
 function GameLayer:get_layer()
 	return self.layer
 end

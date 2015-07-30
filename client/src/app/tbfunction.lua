@@ -599,3 +599,24 @@ function CreateSprite(key)
     local Sp = display.newSprite(conf[1]);
     return Sp;
 end
+
+--[[
+des     : 创建一个sprite
+input   : key
+return  : Sprite
+autor   : czt
+date    : 2015年3月6日   
+--]]
+function CreateScale9Sprite(key,fullRect,insetRect)
+    local conf = sg_getresinfo(key);
+    if not conf then
+        return;
+    end
+    local Sp=nil
+    if fullRect==nil then
+        Sp = ccui.Scale9Sprite:create(conf[1])
+    else
+        Sp = ccui.Scale9Sprite:create(conf[1],fullRect,insetRect)--display.newSprite(conf[1]);
+    end
+    return Sp;
+end

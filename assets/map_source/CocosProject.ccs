@@ -30,6 +30,13 @@
         <Project Name="map_1.csd" Type="Layer" />
         <Project Name="Layer.csd" Type="Layer" />
         <Project Name="map_3.csd" Type="Layer" />
+        <Project Name="map_4.csd" Type="Layer" />
+        <Project Name="map_5.csd" Type="Layer" />
+        <Project Name="map_6.csd" Type="Layer" />
+        <Project Name="map_7.csd" Type="Layer" />
+        <Project Name="map_8.csd" Type="Layer" />
+        <Project Name="map_9.csd" Type="Layer" />
+        <Project Name="map_10.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
