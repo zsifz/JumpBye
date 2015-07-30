@@ -7,7 +7,6 @@ if "%4" == "" goto 4
 if "%5" == "" goto 5
 
 call script\conf.bat %1 %2 %4 %5
-
 if "%3" == "nopic" goto 3
 
 echo "--csb--"

@@ -1,10 +1,10 @@
 <Solution>
-  <PropertyGroup Name="CocosProject" Version="2.2.9.0" Type="CocosStudio" />
+  <PropertyGroup Name="CocosProject" Version="2.3.0.1" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Project Name="MainScene.csd" Type="Scene" />
-        <Project Name="map.csd" Type="Layer" />
+        <Project Name="map_2.csd" Type="Layer" />
         <Folder Name="csb">
           <Folder Name="world">
             <Folder Name="pic">
@@ -21,14 +21,16 @@
               <TmxFile Name="ditu7.tmx" />
               <TmxFile Name="ditu8.tmx" />
               <TmxFile Name="ditu9.tmx" />
+              <TmxFile Name="bg_green_01.tmx" />
+              <TmxFile Name="bg_green_02.tmx" />
+              <TmxFile Name="bg_green_03.tmx" />
             </Folder>
           </Folder>
         </Folder>
         <Project Name="map_1.csd" Type="Layer" />
-        <Project Name="map_pingdi.csd" Type="Layer" />
+        <Project Name="map_4.csd" Type="Layer" />
         <Project Name="Layer.csd" Type="Layer" />
-        <Project Name="map_jjg.csd" Type="Layer" />
-        <Project Name="map_1000.csd" Type="Layer" />
+        <Project Name="map_3.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

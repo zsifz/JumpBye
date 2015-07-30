@@ -12,13 +12,12 @@
         <OpenedDocuments>
           <FilePathData Path="Layer.csd" />
           <FilePathData Path="MainScene.csd" />
-          <FilePathData Path="map.csd" />
+          <FilePathData Path="map_2.csd" />
           <FilePathData Path="map_1.csd" />
-          <FilePathData Path="map_1000.csd" />
-          <FilePathData Path="map_jjg.csd" />
-          <FilePathData Path="map_pingdi.csd" />
+          <FilePathData Path="map_3.csd" />
+          <FilePathData Path="map_4.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="map_pingdi.csd" />
+        <ActiveDocument Path="map_2.csd" />
       </Value>
     </Item>
   </Properties>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="36" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="downleft" tilewidth="32" tileheight="32">
+  <image source="downleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="21" name="downmid" tilewidth="32" tileheight="32">
+  <image source="downmid.png" width="128" height="128"/>
+ </tileset>
+ <layer name="块层 1" width="36" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzrcRwDAQxMCTF408+6+V6OIDHWY2h+Scc845968GjJgwY4nd0YoNOxJy7I4KKg6cuGJ3dOPBiw8tdkcd5RAA0w==
+  </data>
+ </layer>
+ <layer name="块层 2" width="36" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztx8sRgCAQwFCaABVU/PVfoylgz3tKZt4hpZiZmZlZRcOCNfmjNnQM7MkfdeDExJX8UTcevPiS/wfBAw3J
+  </data>
+ </layer>
+ <objectgroup name="block" width="36" height="20">
+  <object x="-1" y="561" width="1152" height="75"/>
+ </objectgroup>
+</map>

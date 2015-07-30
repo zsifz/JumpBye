@@ -4,6 +4,6 @@ function GameObjManager:ctor( gamescene,gamelayer)
 	self.gamelayer = gamelayer
 end
 function GameObjManager:addObj( obj )
-	-- body
+	obj:showObj(self.gamelayer)
 end
 return GameObjManager

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="upleft2" tilewidth="32" tileheight="32">
+  <image source="upleft2.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="21" name="upmid2" tilewidth="32" tileheight="32">
+  <image source="upmid2.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="45" name="upright2" tilewidth="32" tileheight="32">
+  <image source="upright2.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="61" name="jingjigu1" tilewidth="32" tileheight="32">
+  <image source="jingjigu1.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="81" name="jingjigu2" tilewidth="32" tileheight="32">
+  <image source="jingjigu2.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="97" name="jingjigu3" tilewidth="32" tileheight="32">
+  <image source="jingjigu3.png" width="128" height="128"/>
+ </tileset>
+ <layer name="1" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzrcNwEAMwMBfzDln7z+NOYMKq+EB7FmKJEmSJP2nopoaaqlLvYnraaCRJppzd8IWWmmjnY7cnbCTLrrpoTd3J+QDLb4Fgw==
+  </data>
+ </layer>
+ <layer name="2" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztx7kNwDAMwECvmN95nf2nMDcIoCYqeAALliJJkiRJ/xpopInmBB+10Eob1QQftdNBJ10JPuqmhxq9Cf5LB9H0Mck=
+  </data>
+ </layer>
+ <layer name="3" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzikSwDAQxEB/NbdzOv9HFgwIW7BEXSU0ZEqRJEmSJH0NNNJEc/KXiIVW2qgmf4nY6aCTruQvETc91Oj92TsieAaJ
+  </data>
+ </layer>
+ <layer name="4" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt08kRgDAQA0FjwJy2ufKPlYlhHywFmqr+66MQlFJKfakGES069L5zzCUMGDFh9p1jbsGKjILqO8fchh0HTly+c36Rvvyu9GWl1BPdQR4BpQ==
+  </data>
+ </layer>
+ <layer name="5" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt08kJgEAQRNFJwn133DX/+PwxNELLUB/evS4VglJKqdTLkKNAiQq16yJbDVp06DFg9BxkbMKMiAUrNtdFtnYcOHHhxuO6KP305X+lLyulvu4FJLkGGQ==
+  </data>
+ </layer>
+ <layer name="6" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt08kRwCAMBEElhI0v8JV/XB6nAA8VsF01/9VDZiIiMqpAE80UnbfUWGiljXY6fecUOyhRtnZv+F1000Ov85ZR9PrLrdIvi0ipD0G0Bsk=
+  </data>
+ </layer>
+ <objectgroup name="block">
+  <object x="807" y="242" width="413" height="43"/>
+  <object x="583" y="400" width="413" height="43"/>
+  <object x="50" y="560" width="1416" height="70"/>
+ </objectgroup>
+ <objectgroup name="gold">
+  <object x="288" y="511"/>
+  <object x="351" y="511"/>
+  <object x="415" y="511"/>
+  <object x="480" y="512"/>
+  <object x="544" y="511"/>
+  <object x="608" y="510">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="672" y="511">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="736" y="512">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="801" y="512">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="703" y="353"/>
+  <object x="768" y="353"/>
+  <object x="832" y="353"/>
+  <object x="1088" y="193"/>
+  <object x="959" y="194"/>
+  <object x="1024" y="192"/>
+  <object x="1279" y="510"/>
+  <object x="1344" y="510"/>
+  <object x="1407" y="512"/>
+ </objectgroup>
+</map>

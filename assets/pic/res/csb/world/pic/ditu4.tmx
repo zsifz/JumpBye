@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="downmid" tilewidth="32" tileheight="32">
+  <image source="downmid.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="17" name="upleft" tilewidth="32" tileheight="32">
+  <image source="upleft.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="37" name="upmid" tilewidth="32" tileheight="32">
+  <image source="upmid.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="61" name="upright" tilewidth="32" tileheight="32">
+  <image source="upright.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="77" name="downright" tilewidth="32" tileheight="32">
+  <image source="downright.png" width="128" height="128"/>
+ </tileset>
+ <layer name="块层 1" width="60" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztx8kNgEAQxMDlXG7IP1qcwCTQckl+uDVJkiRJkvJNNNNAY9BXOm200Br0lZMu2ukI+spLH930BH3lBwRWBzU=
+  </data>
+ </layer>
+ <layer name="块层 5" width="60" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNwDAQxEA16F9+5f7rEENXcAcDHIDJRluKJEmSJEn6q4FGmmhO/hJhoZU2qslfIux00ElX8pcINz3U6P3sHZQpBUk=
+  </data>
+ </layer>
+ <layer name="块层 2" width="60" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1LcRgAAQxEBawHtP/zUimvgn0M4ovfCKQpKkfympopoaapM2onTU00AjTUkbUWZaaKWN9qSNKAeddNFNT9KGYvhfORtR/K+cDUn6vB1uCEk=
+  </data>
+ </layer>
+ <layer name="块层 3" width="60" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1LcNwDAQBEE1I++97b8ubQsiSOIB3QKTfHDhJ4lSSillvxQZchQoUXnaCH13qUaDFh16DJ42Qt9dGjFhxoIVm6eN0HeXdhw4ceHG42kj9F19z9L/ipGl/xUjS/8rRpb+l1LqX72uKi15
+  </data>
+ </layer>
+ <layer name="块层 4" width="60" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztlLkNwDAQw7xY/j/O/vOEC6Q6G4IREWArqGJKxhhjTLt02OOAo/bKJyU/TjjjgmtwqxYlP26444FncKsWJT9eeGPGJ7hVixY+toKiX8pmKvqlbKaiX8pmKtrgHhnzL14N2hEh
+  </data>
+ </layer>
+ <objectgroup name="block" width="60" height="20">
+  <object x="2" y="562" width="1837" height="79"/>
+  <object x="263" y="400" width="412" height="51"/>
+  <object x="805" y="400" width="793" height="59"/>
+  <object x="679" y="243" width="1188" height="45"/>
+  <object x="133" y="244" width="419" height="47"/>
+ </objectgroup>
+ <objectgroup name="gold" width="60" height="20">
+  <object x="256" y="191"/>
+  <object x="320" y="191"/>
+  <object x="383" y="192"/>
+  <object x="384" y="352">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="448" y="352"/>
+  <object x="513" y="352"/>
+  <object x="927" y="352">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object x="1184" y="351"/>
+  <object x="1247" y="351"/>
+  <object x="1312" y="352"/>
+  <object x="1759" y="191">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

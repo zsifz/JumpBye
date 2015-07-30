@@ -17,7 +17,10 @@ function GameScene:loginGame()
     self:addChild(self.gamelayer)
     self.gameobjmanager = GameObjManager:create(self,self.gamelayer)
 
-    self.maplayer=GameMapController:create(self.gamelayer)
+    self.maplayer=GameMapController:create(self.gamelayer,self)
+end
+function GameScene:get_gameobjmanager( ... )
+	return self.gameobjmanager
 end
 function GameScene:update(dt)
     self.maplayer:update(dt)
