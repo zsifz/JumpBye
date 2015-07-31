@@ -7,5 +7,6 @@ MAPLAYER  = 500 --这个是背景的z轴
 GAMESPEED = 300 --map移动速度
 MAPWIDTH  =1920 --单张map宽度
 MAPHEIGHT = 640 --单张map高度
-
+GAMEROPE = 0 --绳子
+GAMEBLOCK = 1 --地板形状对象
 --endregion

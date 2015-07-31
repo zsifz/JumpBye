@@ -4,10 +4,12 @@ local Rope = class("Rope",GameObj)
 local MoveSpeed = GAMESPEED
 function Rope:ctor( arg)
 	Rope.super.ctor(self)
+	self.type = GAMEROPE
 	self.Properties = {
 		angle = math.random(45,60),--0-45度
 		height = arg,--50-150像素
-		speed = math.random(3,10), --1-10
+		speed = math.random(3,6), --1-10
+		still = false
 	}
 	-- self.Properties.angle = 0
 	-- self.Properties.height = 0
@@ -33,7 +35,12 @@ function Rope:showObj( tlayer )
 		local rep = cc.RepeatForever:create( seq)
 		return rep
 	end
-	self.objnode:runAction( RotateAct(self.Properties.speed,self.Properties.angle))
+	if self.Properties.still then
+		self.objnode:runAction( RotateAct(self.Properties.speed,self.Properties.angle))
+	else
+		print("静止的")
+	end
+
 end
 function Rope:update( dt )
 	self.pos.x=self.pos.x-MoveSpeed*dt

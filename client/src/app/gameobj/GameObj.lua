@@ -8,9 +8,16 @@ function GameObj:ctor(  )
 	self.zorder = 0 --层级
 	self.objnode = nil--显示节点
 end
+function GameObj:getType()
+	return self.type
+end
+function GameObj:getId()
+	return self.objid
+end
 function GameObj:setPosition( tpos )
 
 	self.pos = tpos
+	
 	if self.objnode ~= nil then
 
 	end
