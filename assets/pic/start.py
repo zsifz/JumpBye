@@ -561,7 +561,6 @@ def convertImg(argv_type,argv_line,argv_platform,argv_lang,argv_start,argv_end):
 
     client_output_dict = {}
     client_output_dict["$RESPATH$"] = row_texts
-
     gen_file(client_template, client_output, client_output_dict, False)
     
     print 'plist ok! start convert!'

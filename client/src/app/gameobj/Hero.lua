@@ -10,5 +10,6 @@ function Hero:showObj( tlayer)
 	-- self.objnode =sg_create_armature("res#json#role#shouren_61#shouren_61")
 	-- self.objnode:setPosition( self.pos)
 	-- tlayer:addChild( self.objnode)
+	print(name)
 end
 return Hero
